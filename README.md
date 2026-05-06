@@ -20,7 +20,7 @@ In this project, Dremio were used as the query engine, MinIO as Object Storage, 
 
 - Data is ingested from multiple sources and transformed through an ETL pipeline before being stored in a scalable object storage system. Dremio then acts as the query engine, enabling efficient data access, analysis, and querying across the stored datasets.
 
-![image](https://github.com/radzmi/STQD6324_Data_Management_Assigment1/assets/152348714/f6d841a6-7b7b-4d07-b901-2dd849436a1b)
+![image](images/Dremio_Query.jpg)
 
 - Some of the querying process in Dremio
 
