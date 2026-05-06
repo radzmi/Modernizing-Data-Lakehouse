@@ -1,0 +1,1561 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="127">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1565" y="113" width="187" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>OUTPUT IC DEFECT</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>OUTPUT IC DEFECT</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="126">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1590" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">P:\pub.customer.pre-projects\2024\lhdn str\02 pov\03 output\Senarai PRSN 2000 KeAtas - Isu IC.yxdb</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Senarai PRSN 2000 KeAtas - Isu IC.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1565" y="425" width="400" height="229" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>OUTPUT</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>OUTPUT</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1770" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ALIAAQ~1\AppData\Local\Temp\Alteryx\Engine_29516_33914cc5c34d403391e69683b13f5ab8_\Engine_29516_4a45e1199e3d463d9e18b60ad25a292d~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="114">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1590" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="115">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1686" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="118">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1842" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">P:\pub.customer.pre-projects\2024\lhdn str\02 pov\03 output\Status Pemilikan Kenderaan Berdasarkan RON95.yxdb</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+                <WriteCompatibleVersion>False</WriteCompatibleVersion>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Status Pemilikan Kenderaan Berdasarkan RON95.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1061" y="593" width="301" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>STATUS LAYAK</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>STATUS LAYAK</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="103">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1086" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="110">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1182" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'LAYAK'" field="STATUS" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[STATUS = 'LAYAK'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="113">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1278" y="642" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="KATEGORI_PENGGUNA" selected="True" />
+                <SelectField field="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" selected="True" />
+                <SelectField field="OLD_ID_OR_" selected="True" />
+                <SelectField field="NO_POLIS" selected="True" />
+                <SelectField field="NO_TENTERA" selected="True" />
+                <SelectField field="NO_CERT" selected="True" />
+                <SelectField field="PR_ID" selected="True" />
+                <SelectField field="NAMA_OR_NAMA_SYARIKAT" selected="True" />
+                <SelectField field="NO_PENDAFTARAN_KEND" selected="True" />
+                <SelectField field="BUATAN" selected="True" />
+                <SelectField field="MODEL_KEND" selected="True" />
+                <SelectField field="KOD_ASAL_KEND" selected="True" />
+                <SelectField field="KETERANGAN_BADAN" selected="True" />
+                <SelectField field="KETERANGAN_KEGUNAAN" selected="True" />
+                <SelectField field="KUASA_ENJIN" selected="True" />
+                <SelectField field="TAHUN_BUATAN" selected="True" />
+                <SelectField field="TARIKH_KEND_DIDAFTARKAN" selected="True" />
+                <SelectField field="BAHAN_BAKAR" selected="True" />
+                <SelectField field="NEGERI_ISYTIHAR" selected="True" />
+                <SelectField field="TARIKH_TAMAT_LKM" selected="True" />
+                <SelectField field="KOD_KEGUNAAN" selected="True" />
+                <SelectField field="JENIS_BADAN" selected="True" />
+                <SelectField field="STATUS" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1097" y="341" width="203" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>STATUS TIDAK LAYAK</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>STATUS TIDAK LAYAK</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="108">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1122" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="109">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1206" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="KATEGORI_PENGGUNA" selected="True" />
+                <SelectField field="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" selected="True" />
+                <SelectField field="OLD_ID_OR_" selected="True" />
+                <SelectField field="NO_POLIS" selected="True" />
+                <SelectField field="NO_TENTERA" selected="True" />
+                <SelectField field="NO_CERT" selected="True" />
+                <SelectField field="PR_ID" selected="True" />
+                <SelectField field="NAMA_OR_NAMA_SYARIKAT" selected="True" />
+                <SelectField field="NO_PENDAFTARAN_KEND" selected="True" />
+                <SelectField field="BUATAN" selected="True" />
+                <SelectField field="MODEL_KEND" selected="True" />
+                <SelectField field="KOD_ASAL_KEND" selected="True" />
+                <SelectField field="KETERANGAN_BADAN" selected="True" />
+                <SelectField field="KETERANGAN_KEGUNAAN" selected="True" />
+                <SelectField field="KUASA_ENJIN" selected="True" />
+                <SelectField field="TAHUN_BUATAN" selected="True" />
+                <SelectField field="TARIKH_KEND_DIDAFTARKAN" selected="True" />
+                <SelectField field="BAHAN_BAKAR" selected="True" />
+                <SelectField field="NEGERI_ISYTIHAR" selected="True" />
+                <SelectField field="TARIKH_TAMAT_LKM" selected="True" />
+                <SelectField field="KOD_KEGUNAAN" selected="True" />
+                <SelectField field="JENIS_BADAN" selected="True" />
+                <SelectField field="STATUS" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="149" y="497" width="217" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>AGENSI TNB</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>AGENSI TNB</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="282" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="NO_KP_BARU" action="GroupBy" rename="NO_KP_BARU" />
+                <SummarizeField field="NO_KP_BARU" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="116">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="174" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\aliaaqilah\OneDrive - Lembaga Hasil Dalam Negeri Malaysia\Alteryx\02 data yxdb\AGENSI TNB.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>AGENSI TNB.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Id" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="Int32" />
+                <Field name="SUMBER" size="50" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="NAME1" size="150" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="NAME2" size="150" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="NO_KP_BARU" size="50" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="NO_KP_LAMA" size="50" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="NO_POLIS_TENTERA" size="50" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="CONTRACT_ACCOUNT" size="50" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="RATECATEGORY" size="250" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="SUPPLEMENT" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="CONNECTIONOBJECT" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="HOUSENUMBERSUPPLEMENT" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="HOUSE_NUMBER" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="STREET" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="DISTRICT" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="CITY" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="POSTAL" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="STATE" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="ALAMAT_PREMIS_PENDAFTARAN" size="250" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="KOD_KAW" size="250" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="NAMA_KAWASAN" size="250" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="OTHERS" size="50" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="PREMISETYPEDESC" size="255" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_WString" />
+                <Field name="No_KP_Baru_Kurang12" size="50" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="V_String" />
+                <Field name="num_of_duplicates_group" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="Int32" />
+                <Field name="pos_in_group" source="File: aka:AGENSI2024|||select [TNB].* &#xA;from [TNB]" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="533" y="1001" width="433" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>(4) STATUS KELAYAKAN LHDN</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>(4) STATUS KELAYAKAN LHDN</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="690" y="1062" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&gt;=</Operator>
+                <Field>PENDAPATAN AGREGAT C</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-12-23 12:17:00</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>100000</Operand>
+                  <StartDate>2024-12-23 12:17:00</StartDate>
+                  <EndDate>2024-12-23 12:17:00</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[PENDAPATAN AGREGAT C] &gt;= 100000</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="558" y="1062" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="NEW_IC_NO" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="882" y="1050" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ALIAAQ~1\AppData\Local\Temp\Alteryx\Engine_29516_33914cc5c34d403391e69683b13f5ab8_\Engine_29516_328fcfb342874bf3bf5192d4fad18193~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="798" y="1050" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'TIDAK LAYAK LHDN'" field="STATUS" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[STATUS = 'TIDAK LAYAK LHDN'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="533" y="713" width="445" height="229" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>(3) STATUS KELAYAKAN KWSP</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>(3) STATUS KELAYAKAN KWSP</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="690" y="786" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&gt;=</Operator>
+                <Field>Gaji Tahunan</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-12-23 11:33:52</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>100000</Operand>
+                  <StartDate>2024-12-23 11:33:52</StartDate>
+                  <EndDate>2024-12-23 11:33:52</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Gaji Tahunan] &gt;= 100000</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="558" y="762" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="No_KP_Baru" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_No_KP_Baru" selected="True" rename="Right_No_KP_Baru" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="894" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ALIAAQ~1\AppData\Local\Temp\Alteryx\Engine_29516_33914cc5c34d403391e69683b13f5ab8_\Engine_29516_5ee7c2f87b224284a0c918d82fb4cb59~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="798" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'TIDAK LAYAK KWSP'" field="STATUS" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[STATUS = 'TIDAK LAYAK KWSP'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="98">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="558" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="105">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="533" y="449" width="433" height="229" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>(2) STATUS KELAYAKAN TNB</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>(2) STATUS KELAYAKAN TNB</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="702" y="510" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&gt;=</Operator>
+                <Field>Count</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2024-12-23 12:19:48</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>3</Operand>
+                  <StartDate>2024-12-23 12:19:48</StartDate>
+                  <EndDate>2024-12-23 12:19:48</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Count] &gt;= 3</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="558" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="NO_KP_BARU" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Count" selected="False" input="Left_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="882" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ALIAAQ~1\AppData\Local\Temp\Alteryx\Engine_29516_33914cc5c34d403391e69683b13f5ab8_\Engine_29516_3abba8f7e13143d6a36431ea143f28a8~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="798" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'TIDAK LAYAK TNB'" field="STATUS" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[STATUS = 'TIDAK LAYAK TNB'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="570" y="594" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="533" y="161" width="433" height="237" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>(1) STATUS KELAYAKAN SSM</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>(1) STATUS KELAYAKAN SSM</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="558" y="209" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="NoICPolisTentera" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="690" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Contains([Concat_Sumber],'SSM_Liabiliti') OR Contains([Concat_Sumber], 'ROC') OR [Count]&gt;2</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([Concat_Sumber],'SSM_Liabiliti') OR Contains([Concat_Sumber], 'ROC') OR...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="558" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="86">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="882" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ALIAAQ~1\AppData\Local\Temp\Alteryx\Engine_29516_33914cc5c34d403391e69683b13f5ab8_\Engine_29516_6766d1d3494d4876bac9bce47b794b5b~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="798" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'TIDAK LAYAK SSM'" field="STATUS" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[STATUS = 'TIDAK LAYAK SSM'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="149" y="725" width="230" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>AGENSI KWSP</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>AGENSI KWSP</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="174" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\aliaaqilah\OneDrive - Lembaga Hasil Dalam Negeri Malaysia\Alteryx\02 data yxdb\AGENSI KWSP.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>AGENSI KWSP.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Id" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="Int32" />
+                <Field name="Sumber" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="V_String" />
+                <Field name="No_KP_Baru" size="12" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="V_String" />
+                <Field name="No_KP_Lama" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="V_String" />
+                <Field name="No_KP_Tentera" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="V_String" />
+                <Field name="Nama" size="200" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="V_String" />
+                <Field name="Tkhlahir" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="V_String" />
+                <Field name="Jantina" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="V_String" />
+                <Field name="Anggaran_Gaji" scale="2" size="20" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [KWSP].* &#xA;from [KWSP]" type="FixedDecimal" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="258" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Anggaran_Gaji]*12" field="Gaji Tahunan" size="8" type="Double" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Gaji Tahunan = [Anggaran_Gaji]*12
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="149" y="305" width="229" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>AGENSI SSM</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>AGENSI SSM</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="174" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\aliaaqilah\OneDrive - Lembaga Hasil Dalam Negeri Malaysia\Alteryx\02 data yxdb\AGENSI SSM.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>AGENSI SSM.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Id" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="Int32" />
+                <Field name="companyno" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="vchname" size="150" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="id_type" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="NoICPolisTentera" size="12" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="companyname" size="150" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="Kod_PerniagaanNew" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="dateofficerstart" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="Date" />
+                <Field name="Sumber" size="20" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="NoKPKurang12" size="20" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="SumberNegeri" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="SumberDaerah" size="20" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="JawatanROC" size="50" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+                <Field name="NoICPolisTenteraX12" size="20" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=asyraf;PWD=__EncPwd1__;DATABASE=Agensi2024;SERVER=172.17.251.37|||select [SSM].* &#xA;from [SSM]" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="294" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="NoICPolisTentera" action="GroupBy" rename="NoICPolisTentera" />
+                <SummarizeField field="Sumber" action="Concat" rename="Concat_Sumber">
+                  <Concat_Start />
+                  <Separator>,</Separator>
+                  <Concat_End />
+                </SummarizeField>
+                <SummarizeField field="Sumber" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="149" y="77" width="301" height="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>RON95 2000 KEATAS</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>RON95 2000 KEATAS</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="174" y="137" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\aliaaqilah\OneDrive - Lembaga Hasil Dalam Negeri Malaysia\Alteryx\02 data yxdb\RON95 PRSN 2000 KEATAS.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>RON95 PRSN 2000 KEATAS.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="KATEGORI_PENGGUNA" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="OLD_ID_OR_" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="NO_POLIS" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="NO_TENTERA" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="NO_CERT" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="PR_ID" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="NAMA_OR_NAMA_SYARIKAT" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="NO_PENDAFTARAN_KEND" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="BUATAN" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="MODEL_KEND" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="KOD_ASAL_KEND" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="KETERANGAN_BADAN" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="KETERANGAN_KEGUNAAN" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="KUASA_ENJIN" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="TAHUN_BUATAN" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="TARIKH_KEND_DIDAFTARKAN" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="BAHAN_BAKAR" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="NEGERI_ISYTIHAR" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="TARIKH_TAMAT_LKM" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="KOD_KEGUNAAN" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+                <Field name="JENIS_BADAN" size="500" source="File: odb:Provider=SQLNCLI11.1;Password=__EncPwd1__;Persist Security Info=True;User ID=asyraf;Initial Catalog=JPJ_Subsidi_RON95;Data Source=172.17.251.146;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=091SYAHMI205;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE|||select [RON95_PRSN_2000_KEATAS].* &#xA;from [RON95_PRSN_2000_KEATAS]" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="366" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="NEW_ID_OR_NO_SYARIKAT_MYKAS_PA" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="125">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="270" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Length([NEW_ID_OR_NO_SYARIKAT_MYKAS_PA]) = 12</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Length([NEW_ID_OR_NO_SYARIKAT_MYKAS_PA]) = 12</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="149" y="1001" width="200" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>AGENSI LHDN DIESEL</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>AGENSI LHDN DIESEL</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="174" y="1050" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="">aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* 
+from [COMPILE NC BIASA 09102024]</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>True</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:SubsidiDiesel
+Query=select [COMPILE NC BIASA 091...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="BIL" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="DESCP" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="Right_DESCP" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="KATEGORI" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="KELAS DESC" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="NAMA PC" size="150" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="NEW_IC_NO" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="OLD_IC_NO" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="POLICE_ARMY_NO" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="PASSPORT_NO" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="ASM_YR" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="PENDAPATAN AGREGAT C" scale="2" size="20" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="FixedDecimal" />
+                <Field name="SPOUSE_NAME" size="150" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="SPOUSE_NEW_IC_NO" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="SPOUSE_OLD_IC_NO" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="SPOUSE_POLICE_ARMY_NO" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="SPOUSE_PASSPORT_NO" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="SPOUSE_ASM_YR" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+                <Field name="PENDAPATAN AGREGAT PASANGAN C" scale="2" size="20" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="FixedDecimal" />
+                <Field name="PUNCA FAIL" size="50" source="File: aka:SubsidiDiesel|||select [COMPILE NC BIASA 09102024].* &#xA;from [COMPILE NC BIASA 09102024]" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="114" Connection="Output" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="Unique" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="Unique" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="109" Connection="Output" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="90" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="90" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="True" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="99" Connection="False" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="100" Connection="Left" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Join" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="52" Connection="False" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="95" Connection="Left" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Join" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="100" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="100" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="65" Connection="False" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="90" Connection="Left" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Join" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="95" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="95" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Join" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="85" Connection="Left" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="62" Connection="False" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="True" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="85" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Unique" />
+      <Destination ToolID="85" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="True" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="False" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ron95 workflow.v1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="21eebdc8-cd0c-47d8-a834-f1345477f8ed" />
+      <Telemetry>
+        <PreviousWorkflowId value="6f4734bd-f208-41fc-a06c-308cfa07ebd8" />
+        <OriginWorkflowId value="76c4b892-b638-4e1a-b426-ef62babf3da6" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
