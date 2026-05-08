@@ -31,6 +31,10 @@ In this project, Dremio were used as the query engine, MinIO as Object Storage, 
 - This is the EDA processs that already been done in Alteryx. The dataset is first loaded and filtered by selecting only the required columns. Rows containing null values are removed to ensure data quality, followed by renaming columns and adjusting data types for consistency. The data is then grouped based on relevant criteria before being exported in CSV format for further analysis or storage.
 
 
+
+Alteryx plays an important role in the verification process by improving speed, reducing manual errors, and enabling automation for future financial incentive cycles. After building the workflow in Alteryx Designer, it can be deployed to Alteryx Server, where clients can schedule execution times and automatically save outputs to a specified folder. This automation improves efficiency, but it has limitations. The workflow can only be reused if the verification logic remains unchanged. Any updates to business rules or requirements require the workflow to be reconfigured before the next run.
+
+
 This project also includes training supervised machine learning models to support eligibility verification. Three models were tested: Logistic Regression, Random Forest, and XGBoost.
 After evaluation, Random Forest was selected as the best model because it provides a strong balance between performance and efficiency. Logistic Regression had weaker performance in predicting positive cases, while XGBoost achieved similar results to Random Forest but required higher computational resources and longer training time.
 
